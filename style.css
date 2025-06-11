@@ -1,5 +1,11 @@
 /* Reset and base styles */
+@font-face {
+  font-family: Font1;
+  src: url(./JungleFlame-nAAv4.otf);
+}
+
 * {
+  
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -30,6 +36,7 @@ header h1 {
   color: #2c3e50;
   font-size: 1.8rem;
   font-weight: 700;
+  font-family: font1;
 }
 
 nav a {
@@ -127,6 +134,15 @@ button {
 .primary-btn {
   background: #3498db;
   color: white;
+  display: flex;
+  height: 50px;
+  border-radius: 2px;
+  align-items: center;
+  gap: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .primary-btn:hover {
@@ -138,6 +154,14 @@ button {
   background: transparent;
   color: #3498db;
   border: 2px solid #3498db;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 .secondary-btn:hover {
@@ -252,6 +276,14 @@ button {
   flex: 1;
   padding: 0.8rem;
   font-size: 0.9rem;
+}
+.project-links a {
+  flex: 1;
+  padding: 0.8rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: black;
+  background-color: #eee;
 }
 
 
@@ -449,6 +481,11 @@ footer {
   margin: 0 auto;
 }
 
+.footer-section a{
+  color: white;
+  text-decoration: none;
+}
+
 .footer-section h4 {
   color: #3498db;
   font-size: 1.3rem;
@@ -500,6 +537,9 @@ footer {
   margin-top: 3rem;
   padding-top: 2rem;
   border-top: 1px solid rgba(255,255,255,0.1);
+}
+.footer-bottom i{
+  color: yellow;
 }
 
 .footer-bottom p {

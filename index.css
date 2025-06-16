@@ -8,8 +8,8 @@
 /* Custom Properties */
 :root {
   /* Color Palette */
-  --primary: #2563eb;
-  --primary-dark: #1d4ed8;
+  --primary: #1d4ed8;
+  --primary-dark: #1e40af;
   --primary-light: #3b82f6;
   --secondary: #0f172a;
   --accent: #06b6d4;
@@ -65,9 +65,9 @@
   --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
   /* Gradients */
-  --gradient-primary: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-  --gradient-secondary: linear-gradient(135deg, var(--secondary) 0%, var(--text-primary) 100%);
-  --gradient-accent: linear-gradient(135deg, var(--accent) 0%, var(--primary) 100%);
+  --gradient-primary: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+  --gradient-secondary: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  --gradient-accent: linear-gradient(135deg, #06b6d4 0%, #1d4ed8 100%);
   
   /* Glass Effect */
   --glass-bg: rgba(255, 255, 255, 0.1);
@@ -209,7 +209,7 @@ p {
 /* Hero Section Styles */
 .hero {
   min-height: 90vh;
-  padding: 1.5rem;
+  padding: 4rem;
   background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
   position: relative;
   overflow: hidden;
@@ -276,9 +276,9 @@ p {
 }
 
 .hero-title {
-  margin: 1rem 0;
-  height: 2.5rem;
-  overflow: hidden;
+  margin-bottom:2rem;
+  /* height: rem; */
+  /* overflow: hidden; */
 }
 
 .typing-text {
@@ -287,7 +287,7 @@ p {
   color: var(--text-primary);
   margin: 0;
   animation: slideUp 0.5s ease-out;
-  opacity: 0;
+  /* opacity: 0; */
   transform: translateY(20px);
 }
 
@@ -589,7 +589,7 @@ p {
   transform: translateX(-50%);
   width: 80px;
   height: 4px;
-  background: linear-gradient(to right, #1d4ed8, var(--accent-color));
+  background: linear-gradient(to right, #1d4ed8, var(--accent));
   border-radius: 2px;
 }
 
@@ -621,7 +621,7 @@ p {
 }
 
 .feature-item:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
   box-shadow: var(--shadow-lg);
   border-color: var(--primary-light);
 }
@@ -1128,7 +1128,7 @@ p {
 .form-group textarea:focus {
   outline: none;
   border-color: #1d4ed8;
-  box-shadow: 0 0 0 3px rgba(var(--primary-rgb), 0.1);
+  box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.1);
 }
 
 .form-group textarea {
@@ -1809,7 +1809,7 @@ p {
 .join-team {
   max-width: 1200px;
   margin: 4rem auto 0;
-  background: linear-gradient(135deg, #1d4ed8 0%, rgb(79, 77, 77) 100%);
+  background: linear-gradient(135deg, #1d4ed8 0%, #1e293b 100%);
   border-radius: 1rem;
   padding: 3rem;
   color: white;
@@ -1870,8 +1870,10 @@ p {
 }
 
 .join-team .btn:hover {
-  background: var(--bg-light);
+  background: #f8fafc;
+  color: #1d4ed8;
   transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
 }
 
 /* Responsive Design */
@@ -2345,7 +2347,9 @@ p {
 
 .prev-btn:hover, .next-btn:hover {
   background: #1d4ed8;
+  color: white;
   transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(29, 78, 216, 0.3);
 }
 
 .prev-btn:hover i, .next-btn:hover i {
@@ -2414,15 +2418,23 @@ p {
   }
 }
 
+/* Global Link Styles */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
 /* Button Styles */
 .btn {
-  padding: 0.8rem 1.5rem;
-  border-radius: 0.5rem;
-  font-weight: 500;
-  transition: all 0.3s ease;
+  text-decoration: none;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 
@@ -2430,14 +2442,13 @@ p {
   background: var(--gradient-primary);
   color: white;
   border: none;
-  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
-  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(29, 78, 216, 0.3);
 }
 
 .btn-primary:hover {
-  background: #1d4ed8;
+  background: #1e40af;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+  box-shadow: 0 6px 20px rgba(29, 78, 216, 0.4);
   color: white;
 }
 
@@ -2449,9 +2460,95 @@ p {
 }
 
 .btn-secondary:hover {
-  background: var(--secondary);
+  background: #0f172a;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(15, 23, 42, 0.4);
+  color: white;
+}
+
+/* Hover Effects */
+.feature-item:hover,
+.project-card:hover,
+.contact-card:hover,
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: #1d4ed8;
+}
+
+.feature-icon:hover,
+.contact-icon:hover,
+.skill-icon:hover {
+  background: #1d4ed8;
+  transform: rotateY(180deg);
+}
+
+.feature-icon:hover i,
+.contact-icon:hover i,
+.skill-icon:hover i {
+  color: white;
+}
+
+/* Social Links */
+.hero-social a,
+.footer-social a,
+.member-social a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+.hero-social a:hover,
+.footer-social a:hover,
+.member-social a:hover {
+  background: #1d4ed8;
+  color: white;
+  transform: translateY(-3px) rotate(360deg);
+  box-shadow: 0 4px 15px rgba(29, 78, 216, 0.3);
+}
+
+/* Form Elements */
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #1d4ed8;
+  box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.1);
+}
+
+/* Section Headers */
+.section-header h3::after {
+  background: linear-gradient(to right, #1d4ed8, var(--accent));
+}
+
+/* Testimonial Controls */
+.prev-btn:hover,
+.next-btn:hover {
+  background: #1d4ed8;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(29, 78, 216, 0.3);
+}
+
+.dot.active {
+  background: #1d4ed8;
+  transform: scale(1.2);
+}
+
+/* Join Team Section */
+.join-team {
+  background: linear-gradient(135deg, #1d4ed8 0%, #1e293b 100%);
+}
+
+.join-team .btn {
+  background: white;
+  color: #1d4ed8;
+}
+
+.join-team .btn:hover {
+  background: #f8fafc;
+  color: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
 }
 
 /* Newsletter */

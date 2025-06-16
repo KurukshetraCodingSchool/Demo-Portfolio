@@ -4,125 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Alok Rathod - Full Stack Developer Portfolio showcasing web development projects and skills">
-  <meta name="author" content="Alok Singh Rathod">
-  <meta property="og:title" content="Alok's Portfolio - Full Stack Developer">
-  <meta property="og:description" content="Full Stack Developer specializing in modern web technologies">
-  <meta property="og:image" content="../images/profile.jpg">
-  <meta property="og:url" content="https://yourwebsite.com">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Alok's Portfolio - Full Stack Developer">
-  <meta name="twitter:description" content="Full Stack Developer specializing in modern web technologies">
-  <meta name="twitter:image" content="../images/profile.jpg">
   <title>Alok Rathod - Full Stack Developer</title>
 
-  <!-- Preload Critical Resources -->
-  <link rel="preload" href="../css/common.css" as="style">
-  <link rel="preload" href="./index.css" as="style">
-  <link rel="preload" href="./index.js" as="script">
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" as="style">
-  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style">
-
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="./index.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="icon" href="../images/logo.png" type="image/x-icon">
-  <meta name="google-site-verification" content="00000000000000000000000000000000000000000">
-
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Alok Rathod",
-    "url": "https://yourwebsite.com",
-    "image": "../images/profile.jpg",
-    "sameAs": [
-      "https://github.com/KurukshetraCodingSchool",
-      "https://www.linkedin.com/in/alokrathod",
-      "https://www.instagram.com/alokrathod"
-    ],
-    "jobTitle": "Full Stack Developer",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Kurukshetra.hub"
-    }
-  }
-  </script>
 </head>
 
 <body>
-  <!-- Skip Link for Accessibility -->
-  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <header class="main-header">
+    <div class="header-container">
+      <div class="logo">
+        <a href="#hero">
+          <img src="../images/logo.png" alt="Alok Rathod Logo">
+          <span>Alok Rathod</span>
+        </a>
+      </div>
+      
+      <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="#hero" class="active"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+          <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
+          <li><a href="courses.html"><i class="fas fa-graduation-cap"></i> Teaching</a></li>
+          <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
 
-  <!-- Loading Overlay -->
-  <div class="loading-overlay">
-    <div class="loading-spinner"></div>
-  </div>
-
-  <!-- Progress Bar -->
-  <div class="progress-bar-container">
-    <div class="progress-bar"></div>
-  </div>
-
-  <!-- Scroll to Top Button -->
-  <button class="scroll-top" aria-label="Scroll to top">
-    <i class="fas fa-arrow-up"></i>
-  </button>
-
-  <!-- Language Switcher -->
-  <div class="language-switcher">
-    <select aria-label="Select language">
-      <option value="en">English</option>
-      <option value="hi">हिंदी</option>
-    </select>
-  </div>
-
-  <!-- Search Container -->
-  <div class="search-container">
-    <div class="search-box">
-      <input type="text" placeholder="Search..." aria-label="Search">
-    </div>
-  </div>
-
-  <!-- Cookie Consent -->
-  <div class="cookie-consent">
-    <p>We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.</p>
-    <div class="cookie-buttons">
-      <button class="accept-btn">Accept</button>
-      <button class="decline-btn">Decline</button>
-    </div>
-  </div>
-
-  <header>
-    <h1>Alok Rathod</h1>
-    <button id="mobile-menu-btn" aria-label="Toggle mobile menu">
-      <i class="fas fa-bars"></i>
-    </button>
-    <div class="theme-toggle-container">
-      <button class="random-theme" aria-label="Random theme">
-        <i class="fas fa-palette"></i>
-      </button>
-      <button class="theme-toggle" aria-label="Toggle dark mode">
-        <i class="fas fa-moon"></i>
-      </button>
-    </div>
-    <nav id="main-nav" role="navigation" aria-label="Main navigation">
-      <a href="#hero"><i class="fas fa-home"></i> Home</a>
-      <a href="#about"><i class="fas fa-user"></i> About</a>
-      <a href="#projects"><i class="fas fa-code"></i> Projects</a>
-      <a href="courses.html"><i class="fas fa-graduation-cap"></i> Teaching</a>
-      <a href="../html/contact.html"><i class="fas fa-envelope"></i> Contact</a>
-    </nav>
   </header>
 
   <main id="main-content">
     <section class="hero" id="hero">
       <div class="hero-content">
         <div class="hero-text">
-          <h1>Hi, I'm <span class="highlight">Alok Rathod</span></h1>
-          <p>Full-Stack Web Developer & Tech Educator passionate about creating innovative web solutions and sharing knowledge. With expertise in modern web technologies, I help businesses and students achieve their digital goals.</p>
+          <div class="hero-greeting">
+            <span class="wave">👋</span>
+            <h1>Hi, I'm <span class="highlight">Alok Rathod</span></h1>
+          </div>
+          <div class="hero-title">
+            <h2 class="typing-text">Full Stack Developer</h2>
+            <h2 class="typing-text">Tech Educator</h2>
+            <h2 class="typing-text">Problem Solver</h2>
+          </div>
+          <p class="hero-description">Passionate about creating innovative web solutions and sharing knowledge. With expertise in modern web technologies, I help businesses and students achieve their digital goals.</p>
           <div class="hero-buttons">
             <a href="#projects" class="btn btn-primary">
               <i class="fas fa-rocket"></i>
@@ -133,98 +59,133 @@
               Download CV
             </a>
           </div>
+          <div class="hero-social">
+            <a href="https://github.com/KurukshetraCodingSchool" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/alokrathod" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/alokrathod" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
         </div>
         <div class="hero-image">
-          <img 
-            src="../images/WhatsApp Image 2025-05-30 at 19.59.02_b4e1aad5.jpg" 
-            alt="Alok Rathod" 
-            loading="eager" 
-            fetchpriority="high"
-            width="400"
-            height="533"
-          >
+          <div class="image-wrapper">
+            <img 
+              src="../images/WhatsApp Image 2025-05-30 at 19.59.02_b4e1aad5.jpg" 
+              alt="Alok Rathod" 
+              loading="eager" 
+              fetchpriority="high"
+              width="400"
+              height="533"
+            >
+            <div class="image-shape"></div>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">15+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">50+</span>
+              <span class="stat-label">Happy Clients</span>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="hero-scroll">
+        <a href="#about" class="scroll-down">
+          <span>Scroll Down</span>
+          <i class="fas fa-chevron-down"></i>
+        </a>
       </div>
     </section>
 
     <section class="features">
-      <h3>My Skills</h3>
+      <div class="section-header">
+        <h3>My Expertise</h3>
+        <p class="section-subtitle">What I bring to the table</p>
+      </div>
       <div class="feature-grid">
         <div class="feature-item">
-          <i class="fab fa-html5"></i>
-          <h4>HTML5</h4>
-          <div class="progress-bar">
-            <div class="progress" style="width: 95%"></div>
+          <div class="feature-icon">
+            <i class="fab fa-html5"></i>
           </div>
-          <p>Semantic markup and modern web standards</p>
+          <div class="feature-content">
+            <h4>Frontend Development</h4>
+            <p>Creating beautiful and responsive user interfaces with modern technologies</p>
+            <div class="skill-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>React</span>
+              <span>Tailwind</span>
+            </div>
+          </div>
         </div>
         <div class="feature-item">
-          <i class="fab fa-css3-alt"></i>
-          <h4>CSS3</h4>
-          <div class="progress-bar">
-            <div class="progress" style="width: 90%"></div>
+          <div class="feature-icon">
+            <i class="fas fa-server"></i>
           </div>
-          <p>Responsive design and animations</p>
+          <div class="feature-content">
+            <h4>Backend Development</h4>
+            <p>Building robust and scalable server-side applications</p>
+            <div class="skill-tags">
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>MongoDB</span>
+              <span>REST API</span>
+              <span>GraphQL</span>
+            </div>
+          </div>
         </div>
         <div class="feature-item">
-          <i class="fab fa-js"></i>
-          <h4>JavaScript</h4>
-          <div class="progress-bar">
-            <div class="progress" style="width: 85%"></div>
+          <div class="feature-icon">
+            <i class="fas fa-tools"></i>
           </div>
-          <p>Interactive and dynamic web applications</p>
+          <div class="feature-content">
+            <h4>Development Tools</h4>
+            <p>Utilizing modern tools and practices for efficient development</p>
+            <div class="skill-tags">
+              <span>Git</span>
+              <span>VS Code</span>
+              <span>Docker</span>
+              <span>CI/CD</span>
+              <span>AWS</span>
+            </div>
+          </div>
         </div>
         <div class="feature-item">
-          <i class="fab fa-react"></i>
-          <h4>React JS</h4>
-          <div class="progress-bar">
-            <div class="progress" style="width: 80%"></div>
+          <div class="feature-icon">
+            <i class="fas fa-paint-brush"></i>
           </div>
-          <p>Building modern user interfaces</p>
-        </div>
-        <div class="feature-item">
-          <i class="fab fa-node-js"></i>
-          <h4>Node JS</h4>
-          <div class="progress-bar">
-            <div class="progress" style="width: 75%"></div>
+          <div class="feature-content">
+            <h4>UI/UX Design</h4>
+            <p>Creating intuitive and engaging user experiences</p>
+            <div class="skill-tags">
+              <span>Figma</span>
+              <span>Adobe XD</span>
+              <span>Wireframing</span>
+              <span>Prototyping</span>
+              <span>Responsive</span>
+            </div>
           </div>
-          <p>Server-side JavaScript runtime</p>
-        </div>
-        <div class="feature-item">
-          <i class="fas fa-database"></i>
-          <h4>MongoDB</h4>
-          <div class="progress-bar">
-            <div class="progress" style="width: 70%"></div>
-          </div>
-          <p>NoSQL database expertise</p>
-        </div>
-        <div class="feature-item">
-          <i class="fas fa-server"></i>
-          <h4>Express JS</h4>
-          <div class="progress-bar">
-            <div class="progress" style="width: 75%"></div>
-          </div>
-          <p>Web application framework for Node.js</p>
-        </div>
-        <div class="feature-item">
-          <i class="fab fa-css3"></i>
-          <h4>Tailwind CSS</h4>
-          <div class="progress-bar">
-            <div class="progress" style="width: 85%"></div>
-          </div>
-          <p>Utility-first CSS framework for rapid UI development</p>
         </div>
       </div>
     </section>
 
     <section class="about" id="about">
-      <h3>About Me</h3>
+      <div class="section-header">
+        <h3>About Me</h3>
+        <p class="section-subtitle">Get to know me better</p>
+      </div>
       <div class="about-container">
         <div class="about-content">
           <div class="about-text">
             <div class="about-description">
-              <p>I'm a passionate Full Stack Developer with expertise in modern web technologies. My journey in web development started with HTML and CSS, and I've evolved into a full-stack developer working with JavaScript frameworks, Node.js, and various databases.</p>
-              <p>At Kurukshetra.hub, I lead development projects and mentor aspiring developers. I'm committed to writing clean, efficient code and staying current with the latest web technologies.</p>
+              <p class="highlight-text">I'm a passionate Full Stack Developer with expertise in modern web technologies.</p>
+              <p>My journey in web development started with HTML and CSS, and I've evolved into a full-stack developer working with JavaScript frameworks, Node.js, and various databases. At Kurukshetra.hub, I lead development projects and mentor aspiring developers.</p>
+              <p>I'm committed to writing clean, efficient code and staying current with the latest web technologies. My goal is to create impactful solutions that make a difference.</p>
             </div>
             <div class="about-stats">
               <div class="stat-item">
@@ -232,7 +193,7 @@
                   <i class="fas fa-code"></i>
                 </div>
                 <div class="stat-info">
-                  <span class="stat-number experience">3</span>
+                  <span class="stat-number experience">3+</span>
                   <span class="stat-label">Years Experience</span>
                 </div>
               </div>
@@ -255,47 +216,150 @@
                 </div>
               </div>
             </div>
+            <div class="about-cta">
+              <a href="#contact" class="btn btn-primary">Let's Talk</a>
+              <a href="#projects" class="btn btn-secondary">View Projects</a>
+            </div>
           </div>
           <div class="about-image">
             <div class="image-container">
               <img src="../images/WhatsApp Image 2025-06-11 at 17.55.54_548a5140.jpg" alt="Profile Image" loading="lazy">
               <div class="image-overlay"></div>
+              <div class="experience-badge">
+                <span>3+</span>
+                <span>Years of Experience</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="courses" id="projects">
-      <h3>My Projects</h3>
-      <div class="courses-grid">
-        <div class="course-card">
-          <img src="../images/Screenshot (10).png" alt="E-Commerce Website" loading="lazy">
-          <h4>E-Commerce Website</h4>
-          <p>A full-featured online store with payment integration and admin dashboard.</p>
-          <div class="project-links">
-            <a href="https://econounity.in/" target="_blank"><i class="fas fa-eye"></i> Live Demo</a>
-            <a href="https://github.com/yourusername/ecommerce-project" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+    <section class="projects" id="projects">
+      <div class="section-header">
+        <h3>Featured Projects</h3>
+        <p class="section-subtitle">Some of my best work</p>
+      </div>
+      <div class="project-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="../images/Screenshot (10).png" alt="E-Commerce Website" loading="lazy">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://econounity.in/" target="_blank" aria-label="View Live Demo" class="project-link">
+                  <i class="fas fa-eye"></i>
+                  <span>Live Demo</span>
+                </a>
+                <a href="https://github.com/yourusername/ecommerce-project" target="_blank" aria-label="View Source Code" class="project-link">
+                  <i class="fab fa-github"></i>
+                  <span>Source Code</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h4>E-Commerce Platform</h4>
+            <p>A full-featured online store with payment integration, user authentication, and admin dashboard. Built with React, Node.js, and MongoDB.</p>
+            <div class="project-tags">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+              <span>Stripe</span>
+            </div>
+            <div class="project-stats">
+              <div class="project-stat">
+                <i class="fas fa-code-branch"></i>
+                <span>15+ Features</span>
+              </div>
+              <div class="project-stat">
+                <i class="fas fa-star"></i>
+                <span>4.8 Rating</span>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="course-card">
-          <img src="../images/Screenshot (9).png" alt="Portfolio Website" loading="lazy">
-          <h4>Portfolio Website</h4>
-          <p>A responsive portfolio website with modern design and animations.</p>
-          <div class="project-links">
-            <a href="https://kurukshetracodingschool.com/" target="_blank"><i class="fas fa-eye"></i> Live Demo</a>
-            <a href="https://github.com/yourusername/portfolio-project" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="../images/Screenshot (9).png" alt="Portfolio Website" loading="lazy">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://kurukshetracodingschool.com/" target="_blank" aria-label="View Live Demo" class="project-link">
+                  <i class="fas fa-eye"></i>
+                  <span>Live Demo</span>
+                </a>
+                <a href="https://github.com/yourusername/portfolio-project" target="_blank" aria-label="View Source Code" class="project-link">
+                  <i class="fab fa-github"></i>
+                  <span>Source Code</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h4>Modern Portfolio</h4>
+            <p>A modern, responsive portfolio website with smooth animations, dark mode, and interactive UI elements. Built with HTML5, CSS3, and JavaScript.</p>
+            <div class="project-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>GSAP</span>
+            </div>
+            <div class="project-stats">
+              <div class="project-stat">
+                <i class="fas fa-mobile-alt"></i>
+                <span>Responsive</span>
+              </div>
+              <div class="project-stat">
+                <i class="fas fa-tachometer-alt"></i>
+                <span>Fast Load</span>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="course-card">
-          <img src="../images/task.png" alt="Task Management App" loading="lazy">
-          <h4>Task Management App</h4>
-          <p>A productivity app with real-time updates and team collaboration features.</p>
-          <div class="project-links">
-            <a href="https://taskmanager-demo.com/" target="_blank"><i class="fas fa-eye"></i> Live Demo</a>
-            <a href="https://github.com/KurukshetraCodingSchool/task-manager" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="../images/task.png" alt="Task Management App" loading="lazy">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://taskmanager-demo.com/" target="_blank" aria-label="View Live Demo" class="project-link">
+                  <i class="fas fa-eye"></i>
+                  <span>Live Demo</span>
+                </a>
+                <a href="https://github.com/KurukshetraCodingSchool/task-manager" target="_blank" aria-label="View Source Code" class="project-link">
+                  <i class="fab fa-github"></i>
+                  <span>Source Code</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h4>Task Management System</h4>
+            <p>A productivity app with real-time updates, team collaboration, and task tracking features. Built with React, Firebase, and Material-UI.</p>
+            <div class="project-tags">
+              <span>React</span>
+              <span>Firebase</span>
+              <span>Material-UI</span>
+              <span>Redux</span>
+            </div>
+            <div class="project-stats">
+              <div class="project-stat">
+                <i class="fas fa-users"></i>
+                <span>Team Ready</span>
+              </div>
+              <div class="project-stat">
+                <i class="fas fa-sync"></i>
+                <span>Real-time</span>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+      <div class="projects-cta">
+        <a href="https://github.com/KurukshetraCodingSchool" target="_blank" class="btn btn-primary">
+          <i class="fab fa-github"></i>
+          View More Projects
+        </a>
       </div>
     </section>
 
@@ -307,38 +371,105 @@
         <h4>Teaching Expertise</h4>
         <div class="skills-grid">
           <div class="skill-item">
-            <i class="fas fa-code"></i>
-            <h5>Web Development</h5>
-            <p>Teaching HTML, CSS, JavaScript, React, and Node.js to beginners and intermediate students</p>
+            <div class="skill-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="skill-content">
+              <h5>Web Development</h5>
+              <p>Comprehensive training in HTML, CSS, JavaScript, React, and Node.js. From basics to advanced concepts.</p>
+              <div class="skill-tags">
+                <span>HTML/CSS</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>Node.js</span>
+              </div>
+            </div>
           </div>
+
           <div class="skill-item">
-            <i class="fas fa-laptop-code"></i>
-            <h5>Programming Fundamentals</h5>
-            <p>Core programming concepts, data structures, and algorithms</p>
+            <div class="skill-icon">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="skill-content">
+              <h5>Programming Fundamentals</h5>
+              <p>Master core programming concepts, data structures, and algorithms with practical examples.</p>
+              <div class="skill-tags">
+                <span>DSA</span>
+                <span>OOP</span>
+                <span>Algorithms</span>
+                <span>Problem Solving</span>
+              </div>
+            </div>
           </div>
+
           <div class="skill-item">
-            <i class="fas fa-database"></i>
-            <h5>Database Management</h5>
-            <p>MongoDB, SQL, and database design principles</p>
+            <div class="skill-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <div class="skill-content">
+              <h5>Database Management</h5>
+              <p>Learn database design, SQL, MongoDB, and data modeling with real-world projects.</p>
+              <div class="skill-tags">
+                <span>MongoDB</span>
+                <span>SQL</span>
+                <span>Data Modeling</span>
+                <span>Backend</span>
+              </div>
+            </div>
           </div>
+
           <div class="skill-item">
-            <i class="fas fa-mobile-alt"></i>
-            <h5>Responsive Design</h5>
-            <p>Mobile-first approach and modern UI/UX principles</p>
+            <div class="skill-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <div class="skill-content">
+              <h5>Responsive Design</h5>
+              <p>Create beautiful, responsive websites that work perfectly on all devices.</p>
+              <div class="skill-tags">
+                <span>Mobile First</span>
+                <span>UI/UX</span>
+                <span>CSS Grid</span>
+                <span>Flexbox</span>
+              </div>
+            </div>
           </div>
+
           <div class="skill-item">
-            <i class="fas fa-square-root-alt"></i>
-            <h5>10th Grade Mathematics</h5>
-            <p>Comprehensive coaching in Algebra, Geometry, Trigonometry, and Statistics for board exams</p>
+            <div class="skill-icon">
+              <i class="fas fa-square-root-alt"></i>
+            </div>
+            <div class="skill-content">
+              <h5>10th Grade Mathematics</h5>
+              <p>Expert coaching in Algebra, Geometry, Trigonometry, and Statistics for board exams.</p>
+              <div class="skill-tags">
+                <span>Algebra</span>
+                <span>Geometry</span>
+                <span>Trigonometry</span>
+                <span>Statistics</span>
+              </div>
+            </div>
           </div>
+
           <div class="skill-item">
-            <i class="fas fa-flask"></i>
-            <h5>10th Grade Science</h5>
-            <p>Expert guidance in Physics, Chemistry, and Biology with practical demonstrations and board exam preparation</p>
+            <div class="skill-icon">
+              <i class="fas fa-flask"></i>
+            </div>
+            <div class="skill-content">
+              <h5>10th Grade Science</h5>
+              <p>Comprehensive guidance in Physics, Chemistry, and Biology with practical demonstrations.</p>
+              <div class="skill-tags">
+                <span>Physics</span>
+                <span>Chemistry</span>
+                <span>Biology</span>
+                <span>Practical</span>
+              </div>
+            </div>
           </div>
         </div>
         <div class="view-courses-btn">
-          <a href="courses.html" class="primary-btn">View Detailed Courses <i class="fas fa-arrow-right"></i></a>
+          <a href="courses.html" class="btn btn-primary">
+            View Detailed Courses <i class="fas fa-arrow-right"></i>
+          </a>
         </div>
       </div>
 
@@ -355,16 +486,26 @@
                 width="400"
                 height="300"
               >
+              <div class="member-overlay">
+                <div class="member-social">
+                  <a href="https://www.linkedin.com/in/alokrathod" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://github.com/KurukshetraCodingSchool" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                  <a href="https://www.instagram.com/alokrathod" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
             </div>
             <div class="member-info">
               <h5>Alok Rathod</h5>
-              <p>Founder & Lead Instructor</p>
-              <div class="member-social">
-                <a href="https://www.linkedin.com/in/alokrathod" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/KurukshetraCodingSchool" target="_blank"><i class="fab fa-github"></i></a>
+              <p class="member-role">Founder & Lead Instructor</p>
+              <p class="member-bio">Full Stack Developer with 3+ years of experience in web development and teaching.</p>
+              <div class="member-expertise">
+                <span>Web Development</span>
+                <span>Programming</span>
+                <span>Teaching</span>
               </div>
             </div>
           </div>
+
           <div class="team-member">
             <div class="member-image">
               <img 
@@ -374,13 +515,22 @@
                 width="400"
                 height="300"
               >
+              <div class="member-overlay">
+                <div class="member-social">
+                  <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                  <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                  <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
             </div>
             <div class="member-info">
               <h5>Vikash Baghel</h5>
-              <p>Co-Founder & Senior Instructor</p>
-              <div class="member-social">
-                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+              <p class="member-role">Co-Founder & Senior Instructor</p>
+              <p class="member-bio">Experienced developer and educator specializing in programming and mathematics.</p>
+              <div class="member-expertise">
+                <span>Programming</span>
+                <span>Mathematics</span>
+                <span>Teaching</span>
               </div>
             </div>
           </div>
@@ -394,96 +544,44 @@
           <p>Are you passionate about teaching and technology? We're always looking for talented educators to join our growing team.</p>
           <div class="join-features">
             <div class="join-feature">
-              <i class="fas fa-graduation-cap"></i>
-              <h5>Teaching Positions</h5>
-              <p>Share your knowledge in Web Development, Programming, Math, or Science</p>
+              <div class="feature-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="feature-content">
+                <h5>Teaching Positions</h5>
+                <p>Share your knowledge in Web Development, Programming, Math, or Science</p>
+              </div>
             </div>
             <div class="join-feature">
-              <i class="fas fa-users"></i>
-              <h5>Great Environment</h5>
-              <p>Work with a dynamic team in a supportive and innovative environment</p>
+              <div class="feature-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <div class="feature-content">
+                <h5>Great Environment</h5>
+                <p>Work with a dynamic team in a supportive and innovative environment</p>
+              </div>
             </div>
             <div class="join-feature">
-              <i class="fas fa-chart-line"></i>
-              <h5>Growth Opportunities</h5>
-              <p>Continuous learning and career development opportunities</p>
+              <div class="feature-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <div class="feature-content">
+                <h5>Growth Opportunities</h5>
+                <p>Continuous learning and career development opportunities</p>
+              </div>
             </div>
           </div>
-          <a href="#contact" class="join-btn">Join Us Today <i class="fas fa-arrow-right"></i></a>
+          <a href="#contact" class="btn btn-primary">
+            Join Us Today <i class="fas fa-arrow-right"></i>
+          </a>
         </div>
       </div>
     </section>
 
     <section class="testimonials" id="testimonials">
       <h3>What People Say</h3>
-      <div class="testimonial-slider">
-          <div class="testimonial-track">
-              <!-- Client Reviews -->
-              <div class="testimonial-slide">
-                  <div class="testimonial-card">
-                      <div class="testimonial-content">
-                          <i class="fas fa-quote-left"></i>
-                          <p>Alok's web development skills are exceptional. He delivered our e-commerce project on time and exceeded our expectations.</p>
-                          <div class="testimonial-author">
-                              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&h=150&fit=crop" alt="Client">
-                              <div class="author-info">
-                                  <h4>Rahul Sharma</h4>
-                                  <p>CEO, TechSolutions</p>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="testimonial-slide">
-                  <div class="testimonial-card">
-                      <div class="testimonial-content">
-                          <i class="fas fa-quote-left"></i>
-                          <p>Working with Alok was a great experience. His attention to detail and problem-solving skills are remarkable.</p>
-                          <div class="testimonial-author">
-                              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&h=150&fit=crop" alt="Client">
-                              <div class="author-info">
-                                  <h4>Priya Patel</h4>
-                                  <p>Founder, DesignHub</p>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-
-              <!-- Student Feedback -->
-              <div class="testimonial-slide">
-                  <div class="testimonial-card">
-                      <div class="testimonial-content">
-                          <i class="fas fa-quote-left"></i>
-                          <p>Alok sir's teaching methods are excellent. He explains complex concepts in a simple way. I learned web development from scratch.</p>
-                          <div class="testimonial-author">
-                              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop" alt="Student">
-                              <div class="author-info">
-                                  <h4>Amit Kumar</h4>
-                                  <p>Web Development Student</p>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="testimonial-slide">
-                  <div class="testimonial-card">
-                      <div class="testimonial-content">
-                          <i class="fas fa-quote-left"></i>
-                          <p>The way Alok sir teaches programming is amazing. His practical approach helped me understand coding better.</p>
-                          <div class="testimonial-author">
-                              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop" alt="Student">
-                              <div class="author-info">
-                                  <h4>Neha Singh</h4>
-                                  <p>C Programming Student</p>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
+  
+      
 
           <!-- Slider Controls -->
           <div class="slider-controls">
@@ -498,132 +596,151 @@
       </div>
     </section>
 
-    <section class="cta" id="contact">
-      <h3>Let's Work Together</h3>
-      <p>I'm always open to discussing new projects and opportunities.</p>
-      <div class="contact-info">
-        <p><i class="fas fa-phone"></i> +91 8959478949</p>
-        <p><i class="fas fa-envelope"></i> alok@kurukshetra.com</p>
+    <section class="contact" id="contact">
+      <div class="section-header">
+        <h3>Get in Touch</h3>
+        <p class="section-subtitle">Let's discuss your project</p>
       </div>
-      <form class="contact-form" id="contactForm">
-        <div class="form-group">
-          <input type="text" name="name" placeholder="Your Name" required>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Location</h4>
+              <p>S-315 Near Kopal School Neharu Nagar, Bhopal, India</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Phone</h4>
+              <p>+91 8959478949</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Email</h4>
+              <p>eralokrathod@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-social">
+            <a href="https://github.com/KurukshetraCodingSchool" target="_blank" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/alokrathod" target="_blank" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/alokrathod" target="_blank" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
         </div>
-        <div class="form-group">
-          <input type="email" name="email" placeholder="Your Email" required>
-        </div>
-        <div class="form-group">
-          <input type="tel" name="phone" placeholder="Your Phone Number" required>
-        </div>
-        <div class="form-group">
-          <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
-        </div>
-        <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
-      </form>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" placeholder="Enter your message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            <i class="fas fa-paper-plane"></i>
+            Send Message
+          </button>
+        </form>
+      </div>
     </section>
   </main>
 
-  <!-- Newsletter Section -->
-  <section class="newsletter">
-    <div class="newsletter-content">
-      <h3>Subscribe to Newsletter</h3>
-      <p>Get updates on new projects and tech articles</p>
-      <form class="newsletter-form" id="newsletterForm">
-        <input type="email" placeholder="Enter your email" required aria-label="Email for newsletter">
-        <button type="submit">Subscribe</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- Blog Section -->
-  <section class="blog" id="blog">
-    <h3>Latest Articles</h3>
-    <div class="blog-grid">
-      <div class="blog-post">
-        <img src="../images/blog1.jpg" alt="Web Development Trends" loading="lazy">
-        <div class="blog-post-content">
-          <h4>Latest Web Development Trends in 2024</h4>
-          <p>Explore the most exciting web development trends that are shaping the future of the internet.</p>
-          <a href="#">Read More <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
-      <div class="blog-post">
-        <img src="../images/blog2.jpg" alt="React Best Practices" loading="lazy">
-        <div class="blog-post-content">
-          <h4>React Best Practices for 2024</h4>
-          <p>Learn the most effective practices for building scalable and maintainable React applications.</p>
-          <a href="#">Read More <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
-      <div class="blog-post">
-        <img src="../images/blog3.jpg" alt="CSS Grid Layout" loading="lazy">
-        <div class="blog-post-content">
-          <h4>Mastering CSS Grid Layout</h4>
-          <p>A comprehensive guide to creating complex layouts with CSS Grid.</p>
-          <a href="#">Read More <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Form Section -->
-  <section class="contact" id="contact">
-    <h3>Get in Touch</h3>
-    <div class="contact-container">
-      <form class="contact-form" id="contactForm">
-        <div class="form-group">
-          <input type="text" name="name" placeholder="Your Name" required aria-label="Your name">
-        </div>
-        <div class="form-group">
-          <input type="email" name="email" placeholder="Your Email" required aria-label="Your email">
-        </div>
-        <div class="form-group">
-          <input type="tel" name="phone" placeholder="Your Phone Number" required aria-label="Your phone number">
-        </div>
-        <div class="form-group">
-          <textarea name="message" placeholder="Your Message" rows="4" required aria-label="Your message"></textarea>
-        </div>
-        <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
-      </form>
-    </div>
-  </section>
-
   <footer class="footer">
     <div class="footer-content">
-      <div class="footer-section">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="../images/logo.png" alt="Alok Rathod Logo">
+          <span>Alok Rathod</span>
+        </div>
+        <p class="footer-description">Full Stack Developer & Tech Educator passionate about creating innovative web solutions and sharing knowledge.</p>
+        <div class="footer-social">
+          <a href="https://github.com/KurukshetraCodingSchool" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/alokrathod" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com/alokrathod" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
       </div>
-      <div class="footer-section">
-        <h4>Contact Info</h4>
-        <p><i class="fas fa-map-marker-alt"></i> S-315 Near Kopal School Neharu Nagar, Bhopal, India</p>
-        <p><i class="fas fa-phone"></i> +91 8959478949</p>
-        <p><i class="fas fa-envelope"></i> eralokrathod@gmail.com</p>
-      </div>
-      <div class="footer-section">
-        <h4>Follow Me</h4>
-        <div class="social-links">
-          <a href="https://github.com/KurukshetraCodingSchool" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/alokrathod" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-          <a href="https://www.instagram.com/alokrathod" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+
+      <div class="footer-links">
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Web Development</a></li>
+            <li><a href="#services">UI/UX Design</a></li>
+            <li><a href="#services">Teaching</a></li>
+            <li><a href="#services">Consulting</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <ul class="contact-info">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>S-315 Near Kopal School Neharu Nagar, Bhopal, India</span>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <span>+91 8959478949</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>eralokrathod@gmail.com</span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
+
     <div class="footer-bottom">
-      <p>&copy; 2024 Alok Singh. All rights reserved.</p>
-      <p>Designed with <i class="fas fa-heart"></i> by Alok Singh Rathod</p>
+      <div class="footer-bottom-content">
+        <p>&copy; 2024 Alok Singh. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
     </div>
   </footer>
 
   <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script src="../js/common.js"></script>
   <script src="./index.js"></script>
 </body>
 </html>
